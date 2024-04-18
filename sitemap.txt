@@ -1,0 +1,2 @@
+http://cppomstar.github.io/2024/04/18/hello-world/
+http://cppomstar.github.io/
