@@ -1,5 +1,4 @@
 http://cppomstar.github.io/tags/index.html
 http://cppomstar.github.io/categories/index.html
-http://cppomstar.github.io/2024/04/19/test/
 http://cppomstar.github.io/2024/04/18/hello-world/
 http://cppomstar.github.io/
