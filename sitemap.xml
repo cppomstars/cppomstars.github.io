@@ -64,4 +64,18 @@
   
 
   
+  <url>
+    <loc>http://cppomstar.github.io/categories/test/</loc>
+    <lastmod>2024-04-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://cppomstar.github.io/categories/test/md-and-latex/</loc>
+    <lastmod>2024-04-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 </urlset>
