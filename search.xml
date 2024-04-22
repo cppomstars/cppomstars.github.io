@@ -28,4 +28,17 @@ href="https://hexo.io/docs/generating.html">Generating</a></p>
 href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
   </entry>
+  <entry>
+    <title>test</title>
+    <url>/2024/04/22/test/</url>
+    <content><![CDATA[
+]]></content>
+      <categories>
+        <category>test</category>
+        <category>latex</category>
+      </categories>
+      <tags>
+        <tag>testlatex</tag>
+      </tags>
+  </entry>
 </search>
