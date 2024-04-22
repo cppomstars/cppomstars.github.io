@@ -31,8 +31,7 @@ href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
   <entry>
     <title>test</title>
     <url>/2024/04/22/test/</url>
-    <content><![CDATA[<p>(1=114514)</p>
-<p>[ 1=114514 ]</p>
+    <content><![CDATA[<p><span class="math inline">\(1\time 1=114514\)</span></p>
 ]]></content>
       <categories>
         <category>test</category>
