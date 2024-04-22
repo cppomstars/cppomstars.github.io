@@ -2,15 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://cppomstar.github.io/2024/04/22/%E4%B8%80%E4%B8%AA%E6%8C%BA%E5%A5%BD%E7%8E%A9%E7%9A%84%E8%84%9A%E6%9C%AC/</loc>
-    
-    <lastmod>2024-04-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://cppomstar.github.io/tags/index.html</loc>
     
     <lastmod>2024-04-19</lastmod>
@@ -45,13 +36,6 @@
     <priority>1.0</priority>
   </url>
 
-  
-  <url>
-    <loc>http://cppomstar.github.io/tags/fun/</loc>
-    <lastmod>2024-04-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
   
 
   
