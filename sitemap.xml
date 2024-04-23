@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://cppomstar.github.io/about/index.html</loc>
+    <loc>http://cppomstar.github.io/2024/04/22/test/</loc>
     
     <lastmod>2024-04-23</lastmod>
     
@@ -11,9 +11,9 @@
   </url>
   
   <url>
-    <loc>http://cppomstar.github.io/2024/04/22/test/</loc>
+    <loc>http://cppomstar.github.io/about/index.html</loc>
     
-    <lastmod>2024-04-22</lastmod>
+    <lastmod>2024-04-23</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
