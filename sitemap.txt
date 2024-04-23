@@ -1,3 +1,4 @@
+http://cppomstar.github.io/about/index.html
 http://cppomstar.github.io/2024/04/22/test/
 http://cppomstar.github.io/tags/index.html
 http://cppomstar.github.io/categories/index.html
