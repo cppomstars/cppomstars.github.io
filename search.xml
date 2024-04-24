@@ -78,6 +78,10 @@ class="math inline">\(\le {10}^{18}\)</span>。</p>
 <p><img src="https://cdn.luogu.com.cn/upload/pic/2251.png" /></p>
 
 </details>
+<p>我将通过对样例的模拟，向大家解释 lazy-tag。</p>
+<p>最初，线段树如下：</p>
+<p><img
+src="https://cdn.luogu.com.cn/upload/image_hosting/76xd28yy.png" /></p>
 ]]></content>
       <categories>
         <category>线段树</category>
