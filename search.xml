@@ -33,10 +33,10 @@ href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
     <url>/2024/04/22/%E7%BA%BF%E6%AE%B5%E6%A0%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<p>请注意，本文默认大家学过单改区查的基础线段树。</p>
 <h3 id="懒标记lazy-tag">1. 懒标记（lazy-tag）</h3>
-<details class="note info no-icon"><summary><p>题面</p>
+<details class="note info no-icon"><summary><p>题面 Note with summary</p>
 </summary>
 <p>给定n个数列,规定有两种操作，一是修改某个元素，二是求子数列[a,b]的连续和。
-数列元素个数最多10万个，询问操作最多10万次。 Note with summary</p>
+数列元素个数最多10万个，询问操作最多10万次。</p>
 
 </details>
 ]]></content>
