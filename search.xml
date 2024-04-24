@@ -78,10 +78,50 @@ class="math inline">\(\le {10}^{18}\)</span>。</p>
 <p><img src="https://cdn.luogu.com.cn/upload/pic/2251.png" /></p>
 
 </details>
-<p>我将通过对样例的模拟，向大家解释 lazy-tag。</p>
-<p>最初，线段树如下：</p>
-<p><img
-src="https://cdn.luogu.com.cn/upload/image_hosting/76xd28yy.png" /></p>
+<p>很明显，如果用暴力进行区间修改，不能通过。</p>
+<p>以下是我的代码，我将对着代码讲述 lazy-tag。</p>
+<details class="note info no-icon"><summary><p>代码</p>
+</summary>
+<p>#include&lt;stdio.h&gt; #include&lt;bits/stdc++.h&gt; using namespace
+std; long long n,m,x,y; long long k; long long a[500010]; struct tree {
+long long l,r,sum,y; }t[500010&lt;&lt;2]; void p_u_(long long u) {
+t[u].sum=t[u&lt;&lt;1].sum+t[u&lt;&lt;1|1].sum; } void p_d_(long long u)
+{ long long L=u&lt;&lt;1,R=u&lt;&lt;1|1;
+t[L].sum+=t[u].y<em>(t[L].r-t[L].l+1);
+t[R].sum+=t[u].y</em>(t[R].r-t[R].l+1); t[L].y+=t[u].y; t[R].y+=t[u].y;
+t[u].y=0; } void b_(long long u,long long l,long long r) {
+t[u].l=l,t[u].r=r; if(l==r) { t[u].sum=a[l]; return; } long long
+mid=l+r&gt;&gt;1; b_(u&lt;&lt;1,l,mid); b_(u&lt;&lt;1|1,mid+1,r);
+p_u_(u); } void u_d_(long long u,long long l,long long r,long long c) {
+if(t[u].l&gt;=l&amp;&amp;t[u].r&lt;=r) { t[u].sum+=c*(t[u].r-t[u].l+1);
+t[u].y+=c; return; } p_d_(u); long long mid=(t[u].l+t[u].r)&gt;&gt;1;
+if(l&lt;=mid)u_d_(u&lt;&lt;1,x,y,c); if(r&gt;mid)
+u_d_(u&lt;&lt;1|1,x,y,c); p_u_(u); } long long q_(long long u,long long
+l,long long r) { if(l&lt;=t[u].l&amp;&amp;r&gt;=t[u].r)return t[u].sum;
+p_d_(u); long long mid=(t[u].l+t[u].r)&gt;&gt;1,ans=0;
+if(l&lt;=mid)ans+=q_(u&lt;&lt;1,l,r);
+if(r&gt;mid)ans+=q_(u&lt;&lt;1|1,l,r); return ans; } int main() {
+cin&gt;&gt;n&gt;&gt;m; for(long long i=1;i&lt;=n;i++) { cin&gt;&gt;a[i];
+} b_(1,1,n); while(m--) { cin&gt;&gt;k; if(k==1) {
+cin&gt;&gt;x&gt;&gt;y&gt;&gt;k; u_d_(1,x,y,k); } else {
+cin&gt;&gt;x&gt;&gt;y; cout&lt;&lt;q_(1,x,y)&lt;&lt;endl; } } return 0;
+}</p>
+
+</details>
+<p>首先，先介绍 lazy-tag 的概念：</p>
+<p>对于每个有 lazy-tag
+的节点，在只有需要用到自己的子节点时才会把修改的命令（lazy-tag）交给子节点。</p>
+<p>lazy-tag 用一个叫做 <code>push_down</code> 的操作下放修改操作。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">p_d_</span><span class="params">(<span class="type">long</span> <span class="type">long</span> u)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="type">long</span> <span class="type">long</span> L=u&lt;&lt;<span class="number">1</span>,R=u&lt;&lt;<span class="number">1</span>|<span class="number">1</span>;</span><br><span class="line">	t[L].sum+=t[u].y*(t[L].r-t[L].l+<span class="number">1</span>);<span class="comment">//处理左子树总和</span></span><br><span class="line">	t[R].sum+=t[u].y*(t[R].r-t[R].l+<span class="number">1</span>);<span class="comment">//右子树</span></span><br><span class="line">	t[L].y+=t[u].y;<span class="comment">//标记下放</span></span><br><span class="line">	t[R].y+=t[u].y;<span class="comment">//同上</span></span><br><span class="line">	t[u].y=<span class="number">0</span>;<span class="comment">//清零，代表下放结束</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>其中，<code>y</code> 就是 lazy-tag。</p>
+<p>第二，<code>up_date</code> 函数在符合
+<code>t[u].l&gt;=l&amp;&amp;t[u].r&lt;=r</code> 时，将 lazy-tag
+加上此次加操作的值，并增加此区间总和。</p>
+<p>若不符合，则进行 <code>push_down</code>
+操作，为递归左右子树铺垫。</p>
+<p>第三，<code>query</code> 函数在
+<code>t[u].l&gt;=l&amp;&amp;t[u].r&lt;=r</code> 不成立时，也需进行
+<code>push_down</code> 操作，原因同上。</p>
 ]]></content>
       <categories>
         <category>线段树</category>
