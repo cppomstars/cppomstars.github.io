@@ -33,10 +33,49 @@ href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
     <url>/2024/04/22/%E7%BA%BF%E6%AE%B5%E6%A0%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<p>请注意，本文默认大家学过单改区查的基础线段树。</p>
 <h3 id="懒标记lazy-tag">1. 懒标记（lazy-tag）</h3>
-<details class="note info no-icon"><summary><p>题面</p>
+<details class="note info no-icon"><summary><p>【模板】线段树 1</p>
 </summary>
-<p>给定n个数列,规定有两种操作，一是修改某个元素，二是求子数列[a,b]的连续和。
-数列元素个数最多10万个，询问操作最多10万次。</p>
+<h2 id="题目描述">题目描述</h2>
+<p>如题，已知一个数列，你需要进行下面两种操作：</p>
+<ol type="1">
+<li>将某区间每一个数加上 <span class="math inline">\(k\)</span>。</li>
+<li>求出某区间每一个数的和。</li>
+</ol>
+<h2 id="输入格式">输入格式</h2>
+<p>第一行包含两个整数 <span class="math inline">\(n,
+m\)</span>，分别表示该数列数字的个数和操作的总个数。</p>
+<p>第二行包含 <span class="math inline">\(n\)</span>
+个用空格分隔的整数，其中第 <span class="math inline">\(i\)</span>
+个数字表示数列第 <span class="math inline">\(i\)</span> 项的初始值。</p>
+<p>接下来 <span class="math inline">\(m\)</span> 行每行包含 <span
+class="math inline">\(3\)</span> 或 <span
+class="math inline">\(4\)</span> 个整数，表示一个操作，具体如下：</p>
+<ol type="1">
+<li><code>1 x y k</code>：将区间 <span class="math inline">\([x,
+y]\)</span> 内每个数加上 <span class="math inline">\(k\)</span>。</li>
+<li><code>2 x y</code>：输出区间 <span class="math inline">\([x,
+y]\)</span> 内每个数的和。</li>
+</ol>
+<h2 id="输出格式">输出格式</h2>
+<p>输出包含若干行整数，即为所有操作 2 的结果。</p>
+<h2 id="样例-1">样例 #1</h2>
+<h3 id="样例输入-1">样例输入 #1</h3>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">5 5</span><br><span class="line">1 5 4 2 3</span><br><span class="line">2 2 4</span><br><span class="line">1 2 3 2</span><br><span class="line">2 3 4</span><br><span class="line">1 1 5 1</span><br><span class="line">2 1 4</span><br></pre></td></tr></table></figure>
+<h3 id="样例输出-1">样例输出 #1</h3>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">11</span><br><span class="line">8</span><br><span class="line">20</span><br></pre></td></tr></table></figure>
+<h2 id="提示">提示</h2>
+<p>对于 <span class="math inline">\(30\%\)</span> 的数据：<span
+class="math inline">\(n \le 8\)</span>，<span class="math inline">\(m
+\le 10\)</span>。<br />
+对于 <span class="math inline">\(70\%\)</span> 的数据：<span
+class="math inline">\(n \le {10}^3\)</span>，<span
+class="math inline">\(m \le {10}^4\)</span>。<br />
+对于 <span class="math inline">\(100\%\)</span> 的数据：<span
+class="math inline">\(1 \le n, m \le {10}^5\)</span>。</p>
+<p>保证任意时刻数列中所有元素的绝对值之和 <span
+class="math inline">\(\le {10}^{18}\)</span>。</p>
+<p><strong>【样例解释】</strong></p>
+<p><img src="https://cdn.luogu.com.cn/upload/pic/2251.png" /></p>
 
 </details>
 ]]></content>
