@@ -31,92 +31,20 @@ href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
   <entry>
     <title>test</title>
     <url>/2024/04/22/test/</url>
-    <content><![CDATA[<p><span class="math inline">\(1\times 1=114514\)</span></p>
-<p>114514</p>
-<p><code>a[i]</code></p>
-<p><span class="math display">\[
-11+11=\frac{1}{114514}
-\]</span></p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line">a[i]</span><br></pre></td></tr></table></figure>
-<p><img
-src="https://cdn.luogu.com.cn/upload/image_hosting/c00drm56.png" /></p>
-<p><a href="https://www.luogu.com.cn/paste">114514</a></p>
-<p><a href="https://www.luogu.com.cn/paste"
-class="uri">https://www.luogu.com.cn/paste</a></p>
-<details class="note warning"><summary><p>This is a note</p>
-</summary>
-<h4 id="details-and-summary">Details and summary</h4>
-<p>Note with summary: <code>note primary This is a summary</code></p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-
-</details>
+    <content><![CDATA[<p>请注意，本文默认大家学过单改区查的基础线段树。</p>
+<h3 id="懒标记lazy-tag">1. 懒标记（lazy-tag）</h3>
+<div class="note info no-icon"><p>Note with summary: <code>题面</code>
+给定n个数列,规定有两种操作，一是修改某个元素，二是求子数列[a,b]的连续和。
+数列元素个数最多10万个，询问操作最多10万次。</p>
+</div>
 ]]></content>
       <categories>
-        <category>test</category>
-        <category>latex</category>
+        <category>线段树</category>
+        <category>学习笔记</category>
       </categories>
       <tags>
-        <tag>testlatex</tag>
+        <tag>线段树</tag>
+        <tag>学习笔记</tag>
       </tags>
   </entry>
 </search>
