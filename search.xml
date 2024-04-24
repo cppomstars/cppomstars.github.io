@@ -36,7 +36,7 @@ href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 <details class="note info no-icon"><summary><p>题面</p>
 </summary>
 <p>给定n个数列,规定有两种操作，一是修改某个元素，二是求子数列[a,b]的连续和。
-数列元素个数最多10万个，询问操作最多10万次。 Note with summary: ``</p>
+数列元素个数最多10万个，询问操作最多10万次。 Note with summary</p>
 
 </details>
 ]]></content>
