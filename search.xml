@@ -43,9 +43,10 @@ src="https://cdn.luogu.com.cn/upload/image_hosting/c00drm56.png" /></p>
 <p><a href="https://www.luogu.com.cn/paste">114514</a></p>
 <p><a href="https://www.luogu.com.cn/paste"
 class="uri">https://www.luogu.com.cn/paste</a></p>
-<div class="note warning"><h4 id="testing-header">Testing Header</h4>
-<p><strong>Welcome</strong> to <a
-href="https://cppomstars.github.io/">My blog!</a> 1</p>
+<details class="note warning"><summary><p>This is a note</p>
+</summary>
+<h4 id="details-and-summary">Details and summary</h4>
+<p>Note with summary: <code>note primary This is a summary</code></p>
 <p>1</p>
 <p>1</p>
 <p>1</p>
@@ -106,7 +107,9 @@ href="https://cppomstars.github.io/">My blog!</a> 1</p>
 <p>1</p>
 <p>1</p>
 <p>1</p>
-</div>
+<p>1</p>
+
+</details>
 ]]></content>
       <categories>
         <category>test</category>
